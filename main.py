@@ -24,14 +24,14 @@ def eredmenyek(jatekoslapok:[int], geplapok:[int]):
 
 
 def JatekosVesztettTeszt():
-    jatekosLista = [6, 4, 5, 8]
-    gepLista = [7, 4, 9]
+    jatekosLista = [10, 3, 3,]
+    gepLista = [6, 10]
     kapott = eredmeny(jatekosLista, gepLista)
     vart = "Játékos vesztett"
     if kapott == vart:
         print("Teszt sikeres. :)")
     else:
-        print("Teszt sikertelen. :(")
+        print("Teszt megbukott. :(")
 
 def tesztek():
     JatekosVesztettTeszt()

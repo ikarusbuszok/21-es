@@ -1,11 +1,24 @@
 
-def eredmeny():
-    jatekos_pontjai = 0
-    gep_pontjai = 0
-    if jatekos_pontjai >= 21:
+def pontszamitas(lapok: [int]):
+    pontok:int = 0
+    for i in range(len(lapok)):
+        pontok += lapok[i]
+        return pontok
+
+
+
+
+
+
+
+
+def eredmenyek(jatekoslapok:[int], geplapok:[int]):
+    if jatekoslapok >= 21:
         print("Játékos vesztett")
-    elif gep_pontjai >= 21:
-        print("gép vesztett")
+    elif geplapok >= 21:
+        print("Gép vesztett")
+
+
 
 
 

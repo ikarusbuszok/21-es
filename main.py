@@ -13,10 +13,36 @@ def pontszamitas(lapok: [int]):
 
 
 def eredmenyek(jatekoslapok:[int], geplapok:[int]):
-    if jatekoslapok >= 21:
+    szöveg=""
+    jatekoslapok: int=pontszamitas(lapok)
+    geplapok: int=pontszamitas(lapok)
+    if jatekoslapok > 21:
         print("Játékos vesztett")
-    elif geplapok >= 21:
+    elif geplapok > 21:
         print("Gép vesztett")
+
+
+
+def JatekosVesztettTeszt():
+    jatekosLista = [6, 4, 8, 9]
+    gepLista = [6, 4, 11]
+    kapott = eredmeny(jatekosLista, gepLista)
+    vart = "Játékos vesztett"
+    if kapott == vart:
+        print("Teszt sikeres. :)")
+    else:
+        print("Teszt megbukott. :(")
+
+def tesztek():
+    JatekosVesztettTeszt()
+
+Tesztek()
+
+
+
+
+
+
 
 
 

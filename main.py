@@ -24,8 +24,8 @@ def eredmenyek(jatekoslapok:[int], geplapok:[int]):
 
 
 def JatekosVesztettTeszt():
-    jatekosLista = [6, 4, 8, 9]
-    gepLista = [6, 4, 11]
+    jatekosLista = [6, 4, 6, 9]
+    gepLista = [6, 4, 9]
     kapott = eredmeny(jatekosLista, gepLista)
     vart = "Játékos vesztett"
     if kapott == vart:
@@ -37,6 +37,7 @@ def tesztek():
     JatekosVesztettTeszt()
 
 Tesztek()
+
 
 
 
